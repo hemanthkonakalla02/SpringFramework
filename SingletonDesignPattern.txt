@@ -1,8 +1,0 @@
-1]Explain indetail about Singleton Design Pattern ?
-  ->Singleton is a design pattern
-  ->Singleton ensures a class has only one instance through out the application and provides the global access point to it
-
-why it is needed ?
-  ->Some resources should exist only once- database connection pool,logger and config manager
-  ->Creating multiple instance would waste memory or causes inconsistency
-  ->By default spring framework follows singleton design pattern
