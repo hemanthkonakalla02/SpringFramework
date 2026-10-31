@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--     <bean id="emp" class="com.spring.core.xml.Employee">
+    		<property name="eid" value="101"></property>
+    		<property name="name" value="HemanthKumarKonakalla"></property>
+    		<property name="salary" value="95000"></property>
+    		<property name="dept" value="SoftwareDevelopment"></property>
+    </bean> -->
+    
+    
+    <bean id="emp" class="com.spring.core.xml.Employee">
+    
+    		<constructor-arg value="15"></constructor-arg>
+    		<constructor-arg value="HemanthKonakalla"></constructor-arg>
+    		<constructor-arg value="95000"></constructor-arg>
+    		<constructor-arg value="SoftwareDevelopment"></constructor-arg>
+    </bean>
+
+</beans>
