@@ -37,4 +37,16 @@
     ->Complexity is Simple
     ->SpringBoot is used to develop Modern Rest API's
 
+
+
+3]Explain indetail about Singleton Design Pattern ?
+
+    ->Singleton is a design pattern
+    ->Singleton ensures a class has only one instance throughout the application and provides a global access point to it
+
+    Why it is needed ?
+        ->Some Resource should exists only one like database connection pool,logger or config manager
+        ->Creating multiple instance would waste memory or cause inconsistency
+        ->By default spring framework follows single ton design pattern
+
         
