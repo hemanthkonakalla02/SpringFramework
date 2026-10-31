@@ -50,3 +50,35 @@
         ->By default spring framework follows single ton design pattern
 
         
+4]Explain indetail about IOC ?
+
+    ->IOC stands for Inversion of Control
+    ->Inversion of Control is a design principle where the control of object creation and dependency management is transfered from application code to Spring IOC
+    Container
+    ->The IOC container in spring framework is responsible for
+        ->Creating objects(beans)
+        ->Injecting dependencies
+        ->Managing the Bean life cycle
+
+    two main containers
+        ->BeanFactory
+        ->ApplicationContext
+
+5]Explain indetail about Dependency Injection ?
+
+        ->Dependency injection is a design pattern and it is a technique to achieve Inversion of Control
+        ->Instead of creating the objects inside the class,the container provides the required objects
+        ->In Spring framework we can perform dependency injection in 3 ways:-
+            1]Field Injection
+            2]Constructor Injection
+            3]Setter Injection
+
+
+6]Explain indetail about Autowiring ?
+
+    ->Autowiring is the feature of a spring that automatically performs dependency injection
+    ->Instead of manually configuring dependency,spring automatically injects them
+    ->In Spring we can perform Autowire in 3 ways:-
+        i)byType : it uses class name
+        ii)byName : field name and bean id should match
+        iii)Constructor : expects a parameterised constructor
