@@ -82,3 +82,12 @@
         i)byType : it uses class name
         ii)byName : field name and bean id should match
         iii)Constructor : it expects a parameterised constructor
+
+
+7]Explain indetail about Primary and Qualifier ?
+
+    ->When spring finds multiple beans of same type,it gets confused during autowiring and throws NoUniqueBeanDefination Exception
+    ->Primary and Qualifier will resolve this conflict
+    ->When thier are multiple beans which are qualifying and when you want to pick single bean we use Qualifier annotation
+    ->If multiple beans of same type are present then bean marked with primary annotation will be choosed by default by the spring during autowiring.
+    ->If we use both Primary and Qualifier ,Qualifier will have the highest precedence.
