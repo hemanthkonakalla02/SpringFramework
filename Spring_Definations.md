@@ -112,3 +112,45 @@
     
 
         
+10]Explain indetail about Spring MVC ?
+
+    ->Spring MVC is a web framework built on top of spring framework that follows MVC Design Pattern to build web applications
+    ->M : Model
+    ->V : View
+    ->C : Controller
+
+    Request Flow:
+        ->When browser sends the request
+                |
+                |
+            Dispatcher Servlet : Front Controller,receives all the requests
+                |
+                |
+            HandlerMapping : finds which controller to call
+                |
+                |
+            Controller : Handles the request,calls Service
+                |
+                |
+            Service : Business logic
+                |
+                |
+            Repository : Database Operations
+                |
+                |
+            Controller : Adds data to model
+                |
+                |
+            View Resolver : finds which view to show
+                |
+                |
+            View : renders HTML with data
+                |
+                |
+            Browser Response
+
+
+    ->What is Dispatcher Servlet ?
+        ->Dispatcher servlet is a front controller which receives the request coming from client and redirects them to corresponding controller.
+        
+            
