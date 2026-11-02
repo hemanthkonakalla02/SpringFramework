@@ -91,3 +91,17 @@
     ->When thier are multiple beans which are qualifying and when you want to pick single bean we use Qualifier annotation
     ->If multiple beans of same type are present then bean marked with primary annotation will be choosed by default by the spring during autowiring.
     ->If we use both Primary and Qualifier ,Qualifier will have the highest precedence.
+
+
+8]Explain Bean lifecycle ?
+
+    ->Spring Bean lifecycle is a sequence of steps from bean creation to destruction,managed entirely by the spring IOC container
+    ->In SpringBean life cycle thier are different steps involved:-
+        1.Container is started
+        2.Beans get intialiazed
+        3.Dependencies get injected
+        4.init
+        5.Normal methods
+        6.Destroy
+
+        
