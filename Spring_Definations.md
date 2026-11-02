@@ -152,5 +152,44 @@
 
     ->What is Dispatcher Servlet ?
         ->Dispatcher servlet is a front controller which receives the request coming from client and redirects them to corresponding controller.
-        
+
+
+11]Explain indetail about HTTP Methods and HTTP Status Codes ?
+
+        1]get() : server sends some data to client
+        2]post() : client sends some data to be saved at server
+        3]put() : client sends some modified data
+        4]delete() : client asks to delete some data from server
+
+
+        1]2XX [Sucess]
+            i)200 : OK,Request Sucessful
+            ii)201 : CREATED, new resource sucessfully created
+            iii)202 : ACCEPTED , Request acceped for processing
+            iv)204 : No CONTENT , Request is sucessful but no content
+
+
+        2]3XX [Redirection]
+            i)301 : Moved Permenantly,Resource moved permenantly to new URL
+            ii)302 : Found,Resouces temporarily moved
+            iii)304 : Not Modified
+
+
+        3]4XX [Client Error] (Problem in Request)
+            i)400 : Bad Request,Invalid Request
+            ii)401 : Unauthorized,Login Required
+            iii)403 : Forbiden,Access Denied
+            iv)404 : Page Not Found
+            v)405 : HTTP Method not supported
+            vi)408: Request time out
+            vii)429 : to many requests from client
+
+
+        4]5XX [Server Error](Problem on Server)
+
+            i)500 : Internal Server Error,Something went wrong on server
+            ii)501 : Not implemented,Server does not support this feature
+            iii)502 : Bad gateway , Invalid response from upstream server
+            iv)503 : Service unavailable ,Server is down or unavailable
+            v)504 : Gateway timeout, Server will not get response in time.
             
