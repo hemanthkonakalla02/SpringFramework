@@ -104,4 +104,11 @@
         5.Normal methods
         6.Destroy
 
+
+9]Bean Scopes ?
+
+    1]Singleton : By default spring follows Singleton
+    2]Prototype : One class can have multiple objects
+    
+
         
